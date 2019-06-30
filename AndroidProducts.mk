@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lithium.mk
+    $(LOCAL_DIR)/aosp_lithium.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lithium-user \
-    lineage_lithium-userdebug \
-    lineage_lithium-eng
+    aosp_lithium-user \
+    aosp_lithium-userdebug \
+    aosp_lithium-eng
