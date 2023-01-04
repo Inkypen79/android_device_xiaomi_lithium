@@ -33,5 +33,8 @@ TARGET_KERNEL_CONFIG += vendor/xiaomi/lithium.config
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # inherit from the proprietary version
 -include vendor/xiaomi/lithium/BoardConfigVendor.mk

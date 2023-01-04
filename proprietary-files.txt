@@ -128,8 +128,8 @@ vendor/firmware/libpn551_fw.so:vendor/lib/libpn551_fw.so|4732c4aac8589d1f8aca13b
 
 # Sensors
 system/etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf
-system/etc/elliptic_sensor.xml
-system/lib64/libnotifyaudiohal.so
-system/lib64/libultrasound.so
 vendor/etc/sensors/hals.conf|fd6193dd8ec39f85948151a83a14690c228121b9
-vendor/lib64/sensors.elliptic.so
+
+# Sensors - from chiron
+vendor/etc/elliptic.xml|af52a1280b5d81a056b683c165d6bbf139329210
+vendor/lib64/sensors.elliptic.so|c3b5c93bf7580447d87881cb06c85e4f93a5e4c9
