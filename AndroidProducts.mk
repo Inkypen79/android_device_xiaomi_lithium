@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_lithium.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_lithium-user \
-    lineage_lithium-userdebug \
-    lineage_lithium-eng
