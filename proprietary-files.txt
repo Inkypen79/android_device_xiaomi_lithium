@@ -1,5 +1,5 @@
 # ADSP modules
-vendor/lib/rfsa/adsp/libdirac-appi.so
+vendor/lib/rfsa/adsp/libdirac-appi.so;DISABLE_DEPS
 
 # Audio ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -18,81 +18,81 @@ system/etc/silence_short.wav:vendor/etc/silence_short.wav
 system/etc/firmware/tfa9891.cnt:vendor/firmware/tfa9891.cnt
 
 # Camera actuators
-vendor/lib/libactuator_dw9763_a8_o-film.so
-vendor/lib/libactuator_dw9763_a8_qtech.so
+vendor/lib/libactuator_dw9763_a8_o-film.so;DISABLE_DEPS
+vendor/lib/libactuator_dw9763_a8_qtech.so;DISABLE_DEPS
 
 # Camera chromatix
-vendor/lib/libchromatix_ov16880_common.so
-vendor/lib/libchromatix_ov16880_cpp_hfr_120.so
-vendor/lib/libchromatix_ov16880_cpp_hfr_60.so
-vendor/lib/libchromatix_ov16880_cpp_hfr_90.so
-vendor/lib/libchromatix_ov16880_cpp_liveshot.so
-vendor/lib/libchromatix_ov16880_cpp_preview.so
-vendor/lib/libchromatix_ov16880_cpp_snapshot.so
-vendor/lib/libchromatix_ov16880_cpp_video.so
-vendor/lib/libchromatix_ov16880_default_preview_3a.so
-vendor/lib/libchromatix_ov16880_default_video.so
-vendor/lib/libchromatix_ov16880_default_video_3a.so
-vendor/lib/libchromatix_ov16880_hfr_120.so
-vendor/lib/libchromatix_ov16880_hfr_120_3a.so
-vendor/lib/libchromatix_ov16880_hfr_60.so
-vendor/lib/libchromatix_ov16880_hfr_60_3a.so
-vendor/lib/libchromatix_ov16880_hfr_90.so
-vendor/lib/libchromatix_ov16880_hfr_90_3a.so
-vendor/lib/libchromatix_ov16880_liveshot.so
-vendor/lib/libchromatix_ov16880_postproc.so
-vendor/lib/libchromatix_ov16880_preview.so
-vendor/lib/libchromatix_ov16880_snapshot.so
-vendor/lib/libchromatix_ov16880_zsl_preview_3a.so
-vendor/lib/libchromatix_ov16880_zsl_video_3a.so
-vendor/lib/libchromatix_ov5675_primax_a3_default_preview.so
-vendor/lib/libchromatix_ov5675_primax_a3_default_video.so
-vendor/lib/libchromatix_ov5675_primax_a3_hfr_120.so
-vendor/lib/libchromatix_ov5675_primax_a3_hfr_60.so
-vendor/lib/libchromatix_ov5675_primax_a3_hfr_90.so
-vendor/lib/libchromatix_ov5675_primax_common.so
-vendor/lib/libchromatix_ov5675_primax_cpp_ds_chromatix.so
-vendor/lib/libchromatix_ov5675_primax_cpp_hfr_120.so
-vendor/lib/libchromatix_ov5675_primax_cpp_hfr_60.so
-vendor/lib/libchromatix_ov5675_primax_cpp_hfr_90.so
-vendor/lib/libchromatix_ov5675_primax_cpp_liveshot.so
-vendor/lib/libchromatix_ov5675_primax_cpp_preview.so
-vendor/lib/libchromatix_ov5675_primax_cpp_snapshot.so
-vendor/lib/libchromatix_ov5675_primax_cpp_us_chromatix.so
-vendor/lib/libchromatix_ov5675_primax_cpp_video.so
-vendor/lib/libchromatix_ov5675_primax_cpp_video_full.so
-vendor/lib/libchromatix_ov5675_primax_default_video.so
-vendor/lib/libchromatix_ov5675_primax_hfr_120.so
-vendor/lib/libchromatix_ov5675_primax_hfr_60.so
-vendor/lib/libchromatix_ov5675_primax_hfr_90.so
-vendor/lib/libchromatix_ov5675_primax_postproc.so
-vendor/lib/libchromatix_ov5675_primax_preview.so
-vendor/lib/libchromatix_ov5675_primax_snapshot.so
-vendor/lib/libchromatix_ov5675_primax_video_full.so
-vendor/lib/libchromatix_ov5675_primax_zsl_preview.so
-vendor/lib/libchromatix_ov5675_primax_zsl_video.so
-vendor/lib/libchromatix_s5k3p3_qtech_common.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_60.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_90.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_liveshot.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_preview.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_snapshot.so
-vendor/lib/libchromatix_s5k3p3_qtech_cpp_video.so
-vendor/lib/libchromatix_s5k3p3_qtech_default_preview.so
-vendor/lib/libchromatix_s5k3p3_qtech_default_video.so
-vendor/lib/libchromatix_s5k3p3_qtech_hfr_120.so
-vendor/lib/libchromatix_s5k3p3_qtech_hfr_120_3a.so
-vendor/lib/libchromatix_s5k3p3_qtech_hfr_60.so
-vendor/lib/libchromatix_s5k3p3_qtech_hfr_60_3a.so
-vendor/lib/libchromatix_s5k3p3_qtech_hfr_90.so
-vendor/lib/libchromatix_s5k3p3_qtech_hfr_90_3a.so
-vendor/lib/libchromatix_s5k3p3_qtech_liveshot.so
-vendor/lib/libchromatix_s5k3p3_qtech_postproc.so
-vendor/lib/libchromatix_s5k3p3_qtech_preview.so
-vendor/lib/libchromatix_s5k3p3_qtech_snapshot.so
-vendor/lib/libchromatix_s5k3p3_qtech_zsl_preview.so
-vendor/lib/libchromatix_s5k3p3_qtech_zsl_video.so
+vendor/lib/libchromatix_ov16880_common.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_liveshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_snapshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_cpp_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_default_preview_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_default_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_default_video_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_hfr_120_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_hfr_60_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_hfr_90_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_liveshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_postproc.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_snapshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_zsl_preview_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov16880_zsl_video_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_a3_default_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_a3_default_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_a3_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_a3_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_a3_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_common.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_ds_chromatix.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_liveshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_snapshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_us_chromatix.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_cpp_video_full.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_default_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_postproc.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_snapshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_video_full.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_zsl_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_ov5675_primax_zsl_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_common.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_liveshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_snapshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_cpp_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_default_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_default_video.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_hfr_120.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_hfr_120_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_hfr_60.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_hfr_60_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_hfr_90.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_hfr_90_3a.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_liveshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_postproc.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_snapshot.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_zsl_preview.so;DISABLE_DEPS
+vendor/lib/libchromatix_s5k3p3_qtech_zsl_video.so;DISABLE_DEPS
 
 # Camera configs
 system/etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml
@@ -101,20 +101,20 @@ system/etc/camera/ov5675_primax_chromatix.xml:vendor/etc/camera/ov5675_primax_ch
 system/etc/camera/s5k3p3_qtech_chromatix.xml:vendor/etc/camera/s5k3p3_qtech_chromatix.xml
 
 # Camera eeproms
-vendor/lib/libmmcamera_ov16880_ofilm_eeprom.so
-vendor/lib/libmmcamera_s5k3p3_qtech_eeprom.so
+vendor/lib/libmmcamera_ov16880_ofilm_eeprom.so;DISABLE_DEPS
+vendor/lib/libmmcamera_s5k3p3_qtech_eeprom.so;DISABLE_DEPS
 
 # Camera sensors
-vendor/lib/libmmcamera_ov16880.so
-vendor/lib/libmmcamera_ov5675_primax.so
-vendor/lib/libmmcamera_s5k3p3_qtech.so
+vendor/lib/libmmcamera_ov16880.so;DISABLE_DEPS
+vendor/lib/libmmcamera_ov5675_primax.so;DISABLE_DEPS
+vendor/lib/libmmcamera_s5k3p3_qtech.so;DISABLE_DEPS
 
 # Display calibration data
 system/etc/qdcm_calib_data_auo_fte716_1080p_video_mode_dsi_panel.xml:vendor/etc/qdcm_calib_data_auo_fte716_1080p_video_mode_dsi_panel.xml
 system/etc/qdcm_calib_data_sharp_fte716_1080p_video_mode_dsi_panel.xml:vendor/etc/qdcm_calib_data_sharp_fte716_1080p_video_mode_dsi_panel.xml
 
 # Fingerprint
-system/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.so|a8e5cb51ed0019fbf2d2b483076c4e5fd0230155
+system/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.so;DISABLE_DEPS|a8e5cb51ed0019fbf2d2b483076c4e5fd0230155
 
 # Graphics firmware
 vendor/firmware/a530_zap.b00
@@ -124,7 +124,7 @@ vendor/firmware/a530_zap.elf
 vendor/firmware/a530_zap.mdt
 
 # NFC firmware
-vendor/firmware/libpn551_fw.so:vendor/lib64/libpn551_fw.so|4732c4aac8589d1f8aca13b96d2d541fb99babea
+vendor/firmware/libpn551_fw.so:vendor/lib64/libpn551_fw.so;DISABLE_DEPS|4732c4aac8589d1f8aca13b96d2d541fb99babea
 
 # Sensors
 system/etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensors/sensor_def_qcomdev.conf
@@ -132,4 +132,4 @@ vendor/etc/sensors/hals.conf|fd6193dd8ec39f85948151a83a14690c228121b9
 
 # Sensors - from chiron
 vendor/etc/elliptic.xml|af52a1280b5d81a056b683c165d6bbf139329210
-vendor/lib64/sensors.elliptic.so|c3b5c93bf7580447d87881cb06c85e4f93a5e4c9
+vendor/lib64/sensors.elliptic.so;DISABLE_DEPS|c3b5c93bf7580447d87881cb06c85e4f93a5e4c9
