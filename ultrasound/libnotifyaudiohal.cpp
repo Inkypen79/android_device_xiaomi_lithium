@@ -10,22 +10,61 @@
 #include <log/log.h>
 #include <string.h>
 
+#include <string>
+
 using android::sp;
 using android::hardware::audio::V6_0::IDevicesFactory;
 using android::hardware::audio::V6_0::IPrimaryDevice;
 using android::hardware::audio::V6_0::Result;
 
+static sp<IDevicesFactory> gFactory;
+static sp<IPrimaryDevice> gPrimaryDevice;
+
+static sp<IPrimaryDevice> getPrimaryDevice() {
+    if (gPrimaryDevice != nullptr) {
+        return gPrimaryDevice;
+    }
+    gFactory = IDevicesFactory::getService();
+    if (gFactory == nullptr) {
+        ALOGE("Failed to get audio devices factory");
+        return nullptr;
+    }
+    auto ret = gFactory->openPrimaryDevice(
+            [&](Result retval, const sp<IPrimaryDevice>& result) {
+                if (retval == Result::OK) {
+                    gPrimaryDevice = result;
+                } else {
+                    ALOGE("Failed to open primary audio device, retval=%d",
+                          static_cast<int>(retval));
+                }
+            });
+    if (!ret.isOk()) {
+        ALOGE("openPrimaryDevice transaction failed: %s",
+              ret.description().c_str());
+        gFactory = nullptr;
+        gPrimaryDevice = nullptr;
+    }
+    return gPrimaryDevice;
+}
+
 void ultrasound_enable(int enable) {
     ALOGD("ultrasound_enable: %d", enable);
-    auto factory = IDevicesFactory::getService();
-    factory->openPrimaryDevice([&](Result retval, const sp<IPrimaryDevice>& result) {
-        if (retval == Result::OK) {
-            result->setParameters({} /* context */,
-                                  {
-                                          {"ultrasound_enable", std::to_string(enable)},
-                                  });
-        }
-    });
+    sp<IPrimaryDevice> device = getPrimaryDevice();
+    if (device == nullptr) {
+        ALOGE("No primary audio device");
+        return;
+    }
+    auto ret = device->setParameters(
+            {} /* context */,
+            {
+                    {"ultrasound_enable", std::to_string(enable)},
+            });
+    if (!ret.isOk()) {
+        ALOGE("setParameters transaction failed: %s",
+              ret.description().c_str());
+        gFactory = nullptr;
+        gPrimaryDevice = nullptr;
+    }
 }
 
 extern "C" void elliptic_notify_audio_hal(char* param) {
